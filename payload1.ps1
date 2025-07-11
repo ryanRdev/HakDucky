@@ -21,7 +21,7 @@ $output = @{
     content = 
     "
     IP: $ip
-    Location: $geocity, $region, $country
+    Location: $city, $region, $country
     Name: $usr
     PC Name: $hostname
     CPU: $cpu
